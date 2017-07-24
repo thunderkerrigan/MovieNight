@@ -1,0 +1,68 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#progressbar .ui-progressbar-value {
+    background-color: green;
+}
+
+body {
+    background-image: url("backgroundForestry.jpg");
+    background-size: cover;
+    font-size: medium;
+}
+
+div {
+    position: absolute;
+    border-radius: 15px 50px;
+}
+
+.Title{
+    text-align: center;
+}
+
+#left {
+    width: 25vw;
+    height: 96vh;
+    margin: 1vh 1vh;
+    background: rgba(135,206,250, 0.5);;
+}
+
+table{
+    height: 60vh;
+    overflow-y: auto;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+#whole{
+    width: 100vw;
+    height: 80vh;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+
+.blurred {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+}
