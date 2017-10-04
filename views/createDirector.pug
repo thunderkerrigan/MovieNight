@@ -1,0 +1,28 @@
+html
+  head
+    title Movie Night
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+  body
+    div
+      div(id='Title' blurred)
+        h1= message
+        form(action='/createDirector', method='POST')
+          p
+            | Director: 
+            input(name='name', value='')
+            | date: 
+          input(type='submit', value='Submit')
+        div(id='full')
+            div(id='tableGrid')
+                div(class='blurred' id='blue')
+                    table(class='table table-hover')
+                        thead
+                            tr: th
+                                h3 Director:
+                            tbody
+                                each name in names
+                                    tr
+                                    td #{name}

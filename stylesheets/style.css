@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -12,57 +12,106 @@ body {
     font-size: medium;
 }
 
+#full {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tableGrid {
+    margin-top: 10vh;
+    width: 40vw;
+    height: 60vh;
+    margin-left: 50%;
+}
+
 div {
     position: absolute;
     border-radius: 15px 50px;
 }
 
-.Title{
+#Title {
     text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #left {
     width: 25vw;
     height: 96vh;
     margin: 1vh 1vh;
-    background: rgba(135,206,250, 0.5);;
+    background: rgba(135, 206, 250, 0.5);
+    ;
 }
 
-table{
+table {
     height: 60vh;
     overflow-y: auto;
+    border-collapse: collapse;
 }
 
-h1{
+h1 {
     text-align: center;
     color: red;
 }
 
-#whole{
+#whole {
     width: 100vw;
     height: 80vh;
 }
 
-thead, tbody, tr, td, th { display: block; }
+thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+    color: whitesmoke;
+    border-collapse: collapse;
+}
 
 tr:after {
-            content: ' ';
-            display: block;
-            visibility: hidden;
-            clear: both;
-        }
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
 
+.gridDiv {
+    display: grid;
+}
 
 .blurred {
-    z-index: 2;
-    width: 100%;
+    /* z-index: 2; */
+    width: 60%;
     height: 100%;
-    margin: 0 0 0 0;
-    padding: 0;
+    /* margin: 0 0 0 0; */
+    /* padding: 0; */
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+}
+
+a:visited,
+a:link,
+a:hover,
+a:active {
+    color: white;
+}
+
+#blue {
+    background: rgba(00, 191, 255, 0.65);
+    overflow: auto;
+}
+
+#blue .table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background: rgba(0, 191, 255, 1);
 }
